@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currency Converter">
+  <link rel="stylesheet" href="style.css">
+  <title>Currency Coverter</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="app-details">
+      <img class="app-img" src="./img/exchange.png" alt="img">
+      <h1 class="app-title">Currency Coverter</h1>
+    </div>
+    <label class="label" for="amount"></label>
+    <input class="amount" type="number" id="amount" value="100">
+    <div class="dropdown">
+      <select class="from-currency-select"></select>
+      <select class="to-currency-select"></select>
+    </div>
+    <button class="button convert-button" id="convert-button">Convert</button>
+    <p class="result" id="result"></p>
+  </div>
+  <!-- Script with array of supported country codes -->
+  <script src="currency-codes.js"></script>
+  <!-- Script with API Key -->
+  <script src="api-key.js"></script>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
